@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>PRACTICA 2 | GENERADOR DE RFC</h1>
+    </div>
+
+    <form id="rfc-form">
+        <label for="nombre">Nombre(s):</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="apellido-paterno">Apellido Paterno:</label>
+        <input type="text" id="apellido-paterno" required><br>
+
+        <label for="apellido-materno">Apellido Materno:</label>
+        <input type="text" id="apellido-materno"><br>
+
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" required><br>
+
+        <button type="submit">Generar RFC</button>
+    </form>
+
+    <h2>RFC Generado:</h2>
+    <p id="rfc-result"></p>
+
+
+    <div class="user-form">
+        <label for="user-id">Consumo de API:</label>
+        <input type="text" id="user-id" placeholder="ID de Usuario" required>
+        <button id="user-search">Buscar Usuario</button>
+        <div id="user-result">
+            <p><strong>Nombre:</strong> <span id="user-name"></span></p>
+            <p><strong>Correo:</strong> <span id="user-email"></span></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        JOSE EDUARDO OROZCO CARDENAS
+        | ACTIVIDAD 2 GENERADOR DE RFC
+        | DERECHOS RESERVADOS
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="rfc-generator.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</body>
+</html>
